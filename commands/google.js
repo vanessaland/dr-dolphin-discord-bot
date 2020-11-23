@@ -7,7 +7,7 @@ module.exports = {
             message.channel.send('http://google.com/');
         } else {
             message.channel.send('You dont have the correct permissions, let me help you :)');
-            message.member.roles.add('779617473901101057');
+            message.member.roles.add('779617473901101057').catch(console.error);
         }
     }
 }
