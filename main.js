@@ -33,7 +33,13 @@ client.on('message', message => {
 
     } else if(command === 'search') {
         client.commands.get('google').execute(message, args);
-    }
+
+    } else if(command === 'add-mod') {
+        client.commands.get('add-mod').execute(message, args);
+
+    } else if(command === 'remove-mod') {
+        client.commands.get('remove-mod').execute(message, args);
+    } 
 });
 
 const botToken = token.getToken();
