@@ -39,6 +39,9 @@ client.on('message', message => {
 
     } else if(command === 'remove-mod') {
         client.commands.get('remove-mod').execute(message, args);
+
+    }  else if(command === 'kick') {
+        client.commands.get('kick').execute(message, args);
     } 
 });
 
